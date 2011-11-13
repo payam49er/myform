@@ -1,0 +1,123 @@
+/* CSS sheet for the navigation tabs of the main page designed and
+coded by Payam Shoghi, founder of Promopro */
+/*
+Theme Name: Promopro
+Description: Promopro index site
+Slicer: Payam Shoghi
+Designer: Payam Shoghi
+Colors:
+text: #745459
+dark brown: #251b17
+light brown: #3b2c25
+white: #e1dedb
+*/
+/* Generic Styles */
+.container{
+    width: 1002px;
+    margin: 0px auto;
+    position: relative;
+    background: #f7f5f4;
+}
+.header{
+    height: 150px;
+    background-color: black;
+    padding: 0;
+}
+.htitle{
+    font-family: Courier New;
+    color: white;
+    margin-top:0px;
+    font-size: 80px;
+    font-weight: 100;
+    font-stretch:expanded;
+    position: absolute;
+    left: 35px;
+    top: 100px;
+    letter-spacing: 0.2px;
+    word-spacing: 0.5px;
+    line-height: 1.5px;
+    white-space: normal;
+}
+.login{
+    font-family: Arial;
+    color: white;
+    position: absolute;
+    right: 10px;
+    top: 100px;
+    font-size: 12px;
+}
+.navigation ul
+{
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+.navigation li
+{
+    float: right;
+    margin: 0;
+}
+.content{
+    background-color:#FFFAFA;
+    height: 450px;
+    display: block;
+    text-align: center;
+    padding-left: 10px;
+}
+.footer{
+    border-top:2px solid #ccc;
+    width: 1002px;
+    background-color:black;
+    height:100px;
+    text-align:center;
+    margin-top: 0;
+    
+    
+}
+.col1 {
+    text-decoration: none;
+    float: left;
+    width: 100px;
+    margin-top: 5px;
+    margin-right: 25px;
+    margin-left: 10px;
+    height: 80px;
+}
+.col2 {
+    float: left;
+    width: 100px;
+    margin-top: 5px;
+    margin-right: 25px;
+    margin-left:25px;
+    height: 80px;
+}
+.col3 {
+    float: left;
+    width: 100px;
+    margin-top: 5px;
+    margin-right:10px;
+    margin-left: 25px;
+    height: 80px;
+}
+.col1 h4, .col2 h4,.col3 h4 {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 12px;
+    text-align: center;
+    font-variant: small-caps;
+    font-family: Arial;
+    margin:0px;
+    padding-bottom: 5px;
+}
+.col1 ul li a, .col2 ul li a, .col3 ul li a {
+    text-decoration: none;
+    color: #EEE;
+    font-size: 12px;
+    text-align: left;
+    font-variant: small-caps;
+    font-family: Arial;
+    line-height:22px;
+    margin:0px;
+    padding-bottom: 5px;
+}
+
