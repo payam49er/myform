@@ -1,0 +1,16 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+:exit()
+:
+#	modified:   earlysignup.css
+#	modified:   earlysignup.php
+#	modified:   js/ajax_login.js
+#	new file:   js/validation.js
+#	modified:   signup_validation.php
+#	modified:   signuptwo.php
+#	modified:   user_registration.php
+#

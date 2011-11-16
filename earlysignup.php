@@ -11,6 +11,7 @@ require_once('user_registration.php');
 
     <html>
         <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
             <title>Capucina, Join the fun</title>
             <link rel="stylesheet" type="text/css" href="reset.css" />
             <link rel="stylesheet" type="text/css" href="earlysignup.css"/>
@@ -19,6 +20,7 @@ require_once('user_registration.php');
 
             <script LANGUAGE="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.js"></script>
             <script LANGUAGE="javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.js"></script>
+            <SCRIPT LANGUAGE="JavaScript" SRC="/myform/js/ajax_login.js"></script>
             <script type="text/javascript"> 
 
                 function isValidEmailAddress(emailAddress) {
@@ -66,11 +68,7 @@ require_once('user_registration.php');
                     
     
 
-                    $('#regform').bind('submit', function(){
-                        
-                    alert("click!!!");
-            return false;    
-            });
+                    
                     
                     
                     
@@ -108,7 +106,7 @@ require_once('user_registration.php');
                 </div>
 
                 <div class="emailform" id="emailform">
-                    <form method="post" action="onSubmit.php" class="next" id="regform">
+                    <form method="request"  class="next" id="regform">
                         <input class="emailbox" type="text" name="validate" id="_email" accept-charset='UTF-8'/><span id="validEmail"></span>
 
 
@@ -116,7 +114,7 @@ require_once('user_registration.php');
 
 
 
-                        <button  class ="button" type="submit" id="submit">I'm in</button>
+                        <button  class ="button"  type="submit" id="submit">I'm in</button>
 
                     </form>
                 </div>
@@ -163,3 +161,4 @@ require_once('user_registration.php');
 
         </body>
     </html> 
+    
