@@ -33,9 +33,16 @@ and open the template in the editor.
     
     </head>
        
+            
+             <div class="css-grd">
        <div class="header">
                     <p>Capucina</p>
                 </div>
+                 
+                 <div class="content">
+                     
+                     <img src="/myform/logos/capucina_main.png" height="400" width="700"/>
+                 </div>
 
 <div id="form" class="emailform">
 <input class="emailbox" id="validate" type="text" name ="validate"> </input><span id="validEmail"></span>
@@ -44,11 +51,11 @@ and open the template in the editor.
 </div>
 
     
-    <div class="footer">
+    <div class="footer" class="field">
         <?php
         $date = date('Y');
         ?>
-                <div class="col1">
+                <div class="col1" class="hint">
                     <ul>
                         <li><a href="#"><span>About</span></a></li>
                         <li><a href="#"><span>Team</span></a></li>
@@ -56,7 +63,7 @@ and open the template in the editor.
                         <li><a href="#"><span>Jobs</span></a></li>
                     </ul>
                 </div>
-                <div class="col2">
+                <div class="col2" class="hint">
                     <ul>
                         <li><a href="#"><span>Brands</span></a></li>
                         <li><a href="#"><span>Boutiques</span></a></li>
@@ -64,7 +71,7 @@ and open the template in the editor.
                         <li><a href="#"><span>Promoters</span></a></li>
                     </ul>
                 </div>
-                <div class="col3">
+                <div class="col3" class="hint">
                     <ul>
                         <li><a href="#"><span>Legal</span></a></li>
                         <li><a href="#"><span>Privacy</span></a></li>
@@ -76,6 +83,24 @@ and open the template in the editor.
                 </div>
                 <!-- end .footer --></div>
 
-       
+             </div>
+    
+    <a href="#dialog" name="modal">Simple Modal Window</a>
+ 
+<div id="boxes">
+ 
+     
+    <!-- #customize your modal window here -->
+ 
+    <div id="dialog" class="window">
+        <b>Testing of Modal Window</b> | 
+         
+        <!-- close button is defined as close class -->
+        <a href="#" class="close">Close it</a>
+ 
+    </div>
+     <div id="mask"></div>
+</div>
+    
     </body>
 </html>

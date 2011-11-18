@@ -14,7 +14,8 @@ $(document).ready(function(){
         data:{'validate':email},
         success:function(data){
             if(data.code==200){  
-                  $("#form").hide(); 
+                
+                     
                  
 //code 200 is for valid email
               $("#msg").text(data.msg);
