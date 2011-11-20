@@ -1,10 +1,16 @@
 //This Ajax code communicates with the PHP user_registration.php to pass the correct response regarding the user
 //validity of email to the front end Code completed by Payam Shoghi and Yiwen 
+function fade_msg(){
+      $('#form2').fadeOut('slow', function() {
+                            // Animation complete.
+                            $('#form').show();
+                        }) 
+}
 
 $(document).ready(function(){
     
     $("#submit").click(function(e){
-        $("#form2").hide();
+        
         $("#msg").text('');
         var email=$("#validate").val();
         //  e.preventDefault();
@@ -17,23 +23,25 @@ $(document).ready(function(){
             },
             success:function(data){
                 if(data.code==200){  
-                     $("#form").remove();
-                     $("#form2").show();
-                 
+                     
+                    $("#form2").show();               
                     //code 200 is for valid email
-                    if(data.exist==1){
+                    if(data.internal_code==0){
                         
-                      
+                        $("#form").remove();
                         $("#msg").text(data.msg);
                         
                        
 
-                    }else{
+                    }else if(data.internal_code==-1) {
                         
-                     
-                        $("#msg").text(data.msg);
-                   
-                    }
+                        setTimeout('fade_msg',10);
+                       
+                         
+                         
+                    }else if (data.internal_code == 1){
+                       
+                }
                 
                 }else{
                    

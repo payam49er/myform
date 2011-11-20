@@ -17,8 +17,8 @@ and open the template in the editor.
         <script LANGUAGE="javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.js"></script>
         <SCRIPT LANGUAGE="JavaScript" SRC="/myform/js/ajax_login.js"></script>
         <SCRIPT LANGUAGE="JavaScript" SRC="/myform/js/validation.js"></script>
+        <SCRIPT LANGUAGE="JavaScript" SRC="/myform/js/launchwindow.js"></script>
 
-      
 
 
         <style>
@@ -45,9 +45,12 @@ and open the template in the editor.
 
             <img src="/myform/logos/capucina_main.png" height="400" width="700"/>
         </div>
-        
+
         <div class="slogan">
             <a>Making the local stores to reach you when you need them</a>
+        </div>
+           <div id="form2" class="emailform2">
+            <span id="msg"></span>
         </div>
         <div id="form" class="emailform">
 
@@ -56,43 +59,103 @@ and open the template in the editor.
             <span id="msg"></span>
         </div>
 
-        <div id="form2" class="emailform2">
-            <span id="msg"></span>
-        </div>
+     
 
 
         <div class="footer">
-            <div class="col1">
+            <div class="list">
 
 
-
-                <ul>
-                    <li><a href="#"><span>About</span></a></li>
-                    <li><a href="#"><span>Team</span></a></li>
-                    <li><a href="#"><span>Contact</span></a></li>
-                    <li><a href="#"><span>Jobs</span></a></li>
-                </ul>
-            </div>
-            <div class="col2" class="hint">
-                <ul>
-                    <li><a href="#"><span>Brands</span></a></li>
-                    <li><a href="#"><span>Boutiques</span></a></li>
-                    <li><a href="#"><span>PR</span></a></li>
-                    <li><a href="#"><span>Promoters</span></a></li>
-                </ul>
-            </div>
-            <div class="col3" class="hint">
-                <ul>
-                    <li><a href="#"><span>Legal</span></a></li>
-                    <li><a href="#"><span>Privacy</span></a></li>
-                    <li><a href="#"><span>Investment</span></a></li>
-                    <li><a href="#"><span>Partnership</span></a></li>
-                </ul>
+                
+                    <a href="#?w=500" rel="popup_name1" class="poplight"><span>About</span></a>
+                    <a href="#?w=500" rel="popup_name2" class="poplight"><span>Team</span></a>
+                    <a href="#?w=500" rel="popup_name3" class="poplight"><span>Contact</span></a>
+                    <a href="#?w=500" rel="popup_name4" class="poplight"><span>Boutiques</span></a>
+                    <a href="#?w=500" rel="popup_name5" class="poplight"><span>Investment</span></a>
+                    <a href="#?w=500" rel="popup_name6" class="poplight"><span>Partnership</span></a>
+                  
+                
                 <a style="color: black;font-size: 10px;position:absolute;right:
                    20px;bottom: 0">Capucina,All rights reserved <?php echo date('Y') ?></a>
-            </div>
+            
             <!-- end .footer --></div>
-
+        <div id="popup_name1" class="popup_block">  <!-- pop up window div -->
+            <p>Capucina is a platform designed to intelligently connect local stores and services to local customers
+            based on demand. Capcuina's smart engine bridges the gap between stores sale staff and customers who are looking 
+            for a service or a product that can be provided. </p>
+        </div>
+        
+        
+         <div id="popup_name2" class="popup_block">  <!-- pop up window div -->
+             <p>Capucina is invented by </p>
+        </div>
+        
+        
+         <div id="popup_name3" class="popup_block">  <!-- pop up window div -->
+              <p>To contact us, please send an email to contact@capucina.com. </p>
+        </div>
+        
+        
+        
+         <div id="popup_name4" class="popup_block">  <!-- pop up window div -->
+              <p>Capucina is a very early stage startup. We have big dreams and big challenges ahead and we are looking for people who 
+              are eager to join us for the journey ahead. </p>
+        </div>
+        
+        
+         <div id="popup_name5" class="popup_block">  <!-- pop up window div -->
+             <p>We are looking to sign up brands. We believe that our product is invaluable to big and small brands alike. 
+             To reach local customers with their unique needs, there is no better tool than Capucina. Give us a call, and let's find
+             out how we can help each other.</p>
+        </div>
+        
+        
+         <div id="popup_name6" class="popup_block">  <!-- pop up window div -->
+            <h2>Turtle Power</h2>
+            <p>I <3 Turtles.</p>
+        </div>
+        
+        
+        
+         <div id="popup_name7" class="popup_block">  <!-- pop up window div -->
+            <h2>Turtle Power</h2>
+            <p>I <3 Turtles.</p>
+        </div>
+        
+         <div id="popup_name8" class="popup_block">  <!-- pop up window div -->
+            <h2>Turtle Power</h2>
+            <p>I <3 Turtles.</p>
+        </div>
+        
+        
+         <div id="popup_name9" class="popup_block">  <!-- pop up window div -->
+            <h2>Turtle Power</h2>
+            <p>I <3 Turtles.</p>
+        </div>
+        
+        
+         <div id="popup_name10" class="popup_block">  <!-- pop up window div -->
+            <h2>Turtle Power</h2>
+            <p>I <3 Turtles.</p>
+        </div>
+        
+        
+         <div id="popup_name11" class="popup_block">  <!-- pop up window div -->
+            <h2>Turtle Power</h2>
+            <p>I <3 Turtles.</p>
+        </div>
+        
+        
+         <div id="popup_name12" class="popup_block">  <!-- pop up window div -->
+            <h2>Turtle Power</h2>
+            <p>I <3 Turtles.</p>
+        </div>
+        
+        
+        
+        
+        
+        
     </div>
 </body>
 </html>

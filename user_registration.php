@@ -17,8 +17,8 @@ if ($_REQUEST) {
             //email is not valid, so generate error 
 //            
             
-            $notvalid = 'Please provide a valid email address';
-             print json_encode(array('code' => 200, 'msg' => $notvalid,'exist'=>0));
+            $notvalid = 'Please provide a valid email address !';
+             print json_encode(array('code' => 200, 'msg' => $notvalid,'internal_code'=>1));
             
             
         } else {
@@ -27,15 +27,15 @@ if ($_REQUEST) {
            $result = $dbRead->fetchRow($sql);
            if($result){      //if the email does exist already an error is generated, if not, then it is sent to the db
                
-               $doublereg =  $_REQUEST['validate']." ".'is already registered';
-                print json_encode(array('code' => 200, 'msg' => $doublereg,'exist'=>1));
+               $doublereg =  $_REQUEST['validate']." ".'is already registered !';
+                print json_encode(array('code' => 200, 'msg' => $doublereg,'internal_code'=>0));
            }else{
 
             $emailAddress = array('email' => $_REQUEST['validate']);
             $dbWrite->insert('betaEmail', $emailAddress);
         
             $thankyou = 'Thank you for joining Capucina';
-             print json_encode(array('code' => 200, 'msg' => $thankyou,'exist'=>0));
+             print json_encode(array('code' => 200, 'msg' => $thankyou,'internal_code'=>-1));
              
              
 //             $mailhost = 'smtp.capucina.com';
