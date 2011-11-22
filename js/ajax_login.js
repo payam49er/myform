@@ -4,6 +4,7 @@ function fade_msg(){
       $('#form2').fadeOut('slow', function() {
                             // Animation complete.
                             $('#form').show();
+                            $("#validate").val('');
                         }) 
 }
 
@@ -25,22 +26,24 @@ $(document).ready(function(){
                 if(data.code==200){  
                      
                     $("#form2").show();               
+                     $("#msg").text(data.msg);
                     //code 200 is for valid email
                     if(data.internal_code==0){
-                        
+                       
                         $("#form").remove();
-                        $("#msg").text(data.msg);
+                       // $("#msg").text(data.msg);
                         
                        
 
                     }else if(data.internal_code==-1) {
+                     //    $("#msg").text(data.msg);
+                       $("#form").hide();
                         
-                        setTimeout('fade_msg',10);
-                       
-                         
+                      setTimeout("fade_msg()",2000);
+//                 fade_msg();
                          
                     }else if (data.internal_code == 1){
-                       
+                    $("#form").remove();      
                 }
                 
                 }else{

@@ -18,7 +18,7 @@ if ($_REQUEST) {
 //            
             
             $notvalid = 'Please provide a valid email address !';
-             print json_encode(array('code' => 200, 'msg' => $notvalid,'internal_code'=>1));
+             print json_encode(array('code' => 200, 'msg' => $notvalid,'internal_code'=>-1));
             
             
         } else {
@@ -35,7 +35,7 @@ if ($_REQUEST) {
             $dbWrite->insert('betaEmail', $emailAddress);
         
             $thankyou = 'Thank you for joining Capucina';
-             print json_encode(array('code' => 200, 'msg' => $thankyou,'internal_code'=>-1));
+             print json_encode(array('code' => 200, 'msg' => $thankyou,'internal_code'=>1));
              
              
 //             $mailhost = 'smtp.capucina.com';

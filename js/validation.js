@@ -23,7 +23,7 @@
                          
                                 $("#validEmail").css({ "background-image": "url('/myform/logos/validyes.png')" });
                                
-                    $('#submit').show();
+                
                                 
 
                             } else {
@@ -31,7 +31,7 @@
                         
                                 $("#validEmail").css({ "background-image": "url('/myform/logos/validno.png')" });
                                
-                    $('#submit').hide();
+                
                     
                                 
 
